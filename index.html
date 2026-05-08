@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ApkDaou - Downloads</title>
+    <style>
+        body {
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-color: #000; 
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding-top: 30px;
+            margin: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* --- ÉCLAIRS TOMBANTS --- */
+        .bolt-particle {
+            position: fixed;
+            top: -50px;
+            color: #00d4ff;
+            font-size: 24px;
+            text-shadow: 0 0 10px #00d4ff, 0 0 20px #fff;
+            user-select: none;
+            pointer-events: none;
+            z-index: 1;
+            animation: fallAnimation linear infinite;
+        }
+        @keyframes fallAnimation {
+            0% { transform: translateY(0) translateX(0) scale(0.8); opacity: 0; }
+            10% { opacity: 1; }
+            100% { transform: translateY(110vh) translateX(5px) scale(1.2); opacity: 0; }
+        }
+
+        .header-title {
+            color: #fff; 
+            font-size: 50px; 
+            font-weight: 900;
+            font-style: italic;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+            text-transform: none; 
+            text-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+            z-index: 10;
+        }
+
+        /* --- MODIFICATION ICI : BARRE BLANCHE AVEC NÉON BLEU --- */
+        .section-name {
+            color: #fff;
+            margin: 20px 0 10px 0;
+            /* La bordure est blanche */
+            border-bottom: 2px solid #ffffff; 
+            padding-bottom: 5px;
+            width: 80%;
+            max-width: 500px;
+            z-index: 10;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            /* Le filtre ajoute l'éclat bleu autour du blanc */
+            filter: drop-shadow(0 0 5px #00d4ff) drop-shadow(0 0 10px #00d4ff);
+        }
+
+        .section-title-icon {
+            width: 50px; 
+            height: auto;
+            margin-right: 50px;
+        }
+
+        .section-title-icon-right {
+            width: 50px; 
+            height: auto;
+            margin-left: 50px;
+        }
+
+        .neon-text {
+            color: #ffffff; 
+            text-shadow: 0 0 8px #00d4ff, 0 0 15px #00d4ff;
+            font-style: italic; 
+            font-weight: bold;  
+            font-size: 35px; 
+            text-transform: none; 
+        }
+
+        .link {
+            width: 85%; 
+            max-width: 420px;
+            padding: 15px 20px; 
+            margin: 8px;
+            border: 2px solid rgba(0, 212, 255, 0.4); 
+            border-radius: 18px;
+            color: white;
+            text-decoration: none; 
+            background: rgba(0, 0, 0, 0.8); 
+            backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+            display: flex; 
+            align-items: center; 
+            z-index: 10;
+            position: relative;
+        }
+
+        .link:hover { 
+            background: rgba(0, 0, 0, 0.9);
+            transform: scale(1.03);
+            border-color: #00d4ff; 
+            box-shadow: 0 0 10px #00d4ff, inset 0 0 5px #00d4ff; 
+        }
+
+        .btn-icon {
+            width: 45px; height: 45px;
+            border-radius: 10px;
+            object-fit: cover;
+            position: absolute;
+            left: 15px;
+        }
+
+        .btn-text-container {
+            flex: 1; 
+            text-align: center;
+        }
+
+        .btn-title { display: block; font-size: 16px; font-weight: bold; }
+        .subtitle { color: #00d4ff; font-size: 11px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="bolt-particle" style="left: 15%; animation-duration: 3s;">⚡</div>
+    <div class="bolt-particle" style="left: 40%; animation-duration: 4s;">⚡</div>
+    <div class="bolt-particle" style="left: 70%; animation-duration: 2.5s;">⚡</div>
+    <div class="bolt-particle" style="left: 90%; animation-duration: 5s;">⚡</div>
+
+    <div class="header-title">xXDaoudiXx</div>
+
+    <div class="section-name">
+        <img src="images/s26profil1.png" class="section-title-icon"> 
+        <span class="neon-text">𝐀𝐧𝐝𝐫𝐨𝐢𝐝</span>
+        <img src="images/s26profilv.png" class="section-title-icon-right">
+    </div>
+    
+    <a class="link" href="downloads/𝐂𝐨𝐯𝐞𝐫 𝐓𝐯 𝐏𝐥𝐚𝐲𝐞𝐫 𝟑.𝟎.𝟖.apk" download="𝐂𝐨𝐯𝐞𝐫 𝐓𝐯 𝐏𝐥𝐚𝐲𝐞𝐫">
+        <img src="images/Cover.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐂𝐨𝐯𝐞𝐫 𝐓𝐯 𝐏𝐥𝐚𝐲𝐞𝐫</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+
+    <a class="link" href="downloads/𝐈𝐏𝐓𝐕 𝐒𝐦𝐚𝐫𝐭𝐞𝐫𝐬 𝐏𝐫𝐨 𝟓.𝟎.apk" download="𝐈𝐩𝐭𝐯 𝐒𝐦𝐚𝐫𝐭𝐞𝐫 𝐏𝐫𝐨">
+        <img src="images/Smarter.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐈𝐩𝐭𝐯 𝐒𝐦𝐚𝐫𝐭𝐞𝐫 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	<a class="link" href="downloads/𝐀𝐝𝐆𝐮𝐚𝐫𝐝 𝐏𝐫𝐨 𝟒.𝟏𝟒.𝟑𝟓.apk" download="𝐀𝐝𝐆𝐮𝐚𝐫𝐝 𝐏𝐫𝐨">
+        <img src="images/adguard.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐀𝐝𝐠𝐮𝐚𝐫𝐝 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐀𝐥𝐟𝐫𝐞𝐝𝐂𝐚𝐦𝐞𝐫𝐚 𝐕𝟐𝟎𝟐𝟓.𝟐𝟒.𝟏.apk" download="𝐀𝐥𝐟𝐫𝐞𝐝𝐂𝐚𝐦𝐞𝐫𝐚 𝐏𝐫𝐨">
+        <img src="images/alfred.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐀𝐥𝐟𝐫𝐞𝐝 𝐂𝐚𝐦𝐞𝐫𝐚 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐀𝐩𝐤 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐨𝐫 - 𝐯𝟒.𝟐.𝟏.apk" download="𝐀𝐩𝐤 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐨𝐫">
+        <img src="images/apk.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐀𝐩𝐤 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐨𝐫</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐁𝐥𝐨𝐤𝐚𝐝𝐚 𝟓 𝐏𝐫𝐨 𝐯𝟐𝟑.𝟐.𝟏.apk" download="𝐁𝐥𝐨𝐤𝐚𝐝𝐚 𝟓 𝐏𝐫𝐨">
+        <img src="images/blokada 5.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐁𝐥𝐨𝐤𝐚𝐝𝐚 𝟓 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐁𝐫𝐚𝐯𝐞 𝐕𝟏.𝟖𝟖.𝟏𝟑𝟑.apk" download="𝐁𝐫𝐚𝐯𝐞">
+        <img src="images/brave.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐁𝐫𝐚𝐯𝐞</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐅𝐢𝐧𝐠 𝐕𝟏𝟐.𝟏𝟏.𝟖.apk" download="𝐅𝐢𝐧𝐠 𝐏𝐫𝐨">
+        <img src="images/Fing.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐅𝐢𝐧𝐠 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐇𝐚𝐩𝐩𝐲 𝐌𝐨𝐝.apk" download="𝐇𝐚𝐩𝐩𝐲𝐦𝐨𝐝𝐬">
+        <img src="images/happymods.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐇𝐚𝐩𝐩𝐲𝐦𝐨𝐝𝐬</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐏𝐥𝐚𝐲 𝐌𝐨𝐝𝐬 𝐯𝟐.𝟔.𝟏𝟖.apk" download="𝐏𝐥𝐚𝐲𝐦𝐨𝐝𝐬">
+        <img src="images/Playmods.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐏𝐥𝐚𝐲𝐦𝐨𝐝𝐬</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐉𝐞𝐥𝐥𝐲𝐅𝐢𝐧 𝐕𝟐.𝟔.𝟑.apk" download="𝐉𝐞𝐥𝐥𝐲𝐟𝐢𝐧">
+        <img src="images/jellyfin.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐉𝐞𝐥𝐥𝐲𝐟𝐢𝐧</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐓𝐚𝐢𝐥𝐬𝐜𝐚𝐥𝐞 - 𝐯𝟏.𝟗𝟔.𝟒.apk" download="𝐓𝐚𝐢𝐥𝐬𝐜𝐚𝐥𝐞">
+        <img src="images/tescal.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐓𝐚𝐢𝐥𝐬𝐜𝐚𝐥𝐞</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐋𝐨𝐜𝐚𝐥 𝐒𝐞𝐧𝐝 𝐯𝟏.𝟏𝟕.𝟎.apk" download="𝐋𝐨𝐜𝐚𝐥𝐬𝐞𝐧𝐝">
+        <img src="images/localsend.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐋𝐨𝐜𝐚𝐥𝐬𝐞𝐧𝐝</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐍𝐨𝐫𝐝 𝐕𝐩𝐧 𝐕𝟖.𝟑𝟏.𝟏.apk" download="𝐍𝐨𝐫𝐝 𝐕𝐩𝐧">
+        <img src="images/nord vpn.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐍𝐨𝐫𝐝 𝐕𝐩𝐧</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐢𝐯𝐲 𝐋𝐚𝐮𝐧𝐜𝐡𝐞𝐫 𝐏𝐫𝐨 𝐯𝟒.𝟔𝟖.apk" download="𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐢𝐯𝐲 𝐏𝐫𝐨">
+        <img src="images/projectivy.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐢𝐯𝐲 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐒𝐝 𝐌𝐚𝐢𝐝 𝐏𝐫𝐨 𝐯𝟓.𝟏.𝟏𝟎.apk" download="𝐒𝐝 𝐌𝐚𝐢𝐝 𝐏𝐫𝐨">
+        <img src="images/sd maid.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐒𝐝 𝐌𝐚𝐢𝐝 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐗-𝐩𝐥𝐨𝐫𝐞 𝐅𝐢𝐥𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐫.apk" download="𝐗𝐩𝐥𝐨𝐫𝐞">
+        <img src="images/xplore.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐗𝐩𝐥𝐨𝐫𝐞</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐙𝐞𝐧 𝐈𝐏𝐓𝐕 𝐏𝐥𝐚𝐲𝐞𝐫 𝟏.𝟗.𝟐.apk" download="𝐙𝐞𝐧">
+        <img src="images/zen.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐙𝐞𝐧</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐀𝐮𝐭𝐨 𝐂𝐥𝐢𝐜𝐤𝐞𝐫 𝐏𝐫𝐨.apk" download="𝐀𝐮𝐭𝐨𝐜𝐥𝐢𝐤𝐞𝐫 𝐏𝐫𝐨">
+        <img src="images/autocliker.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐀𝐮𝐭𝐨𝐜𝐥𝐢𝐤𝐞𝐫 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐅𝐢𝐧𝐝 𝐌𝐲 𝐊𝐢𝐝𝐬 𝐌𝐨𝐝𝐬.apk" download="𝐅𝐢𝐧𝐝 𝐌𝐲 𝐊𝐢𝐝𝐬 𝐏𝐫𝐨">
+        <img src="images/find.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐅𝐢𝐧𝐝 𝐌𝐲 𝐊𝐢𝐝𝐬 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐋𝐨𝐤𝐤𝐞 𝐕𝟏.𝟎.𝟑𝟑.apk" download="𝐋𝐨𝐤𝐤𝐞">
+        <img src="images/lokke.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐋𝐨𝐤𝐤𝐞</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 - 𝐯𝟐.𝟎.𝟑.apk" download="𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫">
+        <img src="images/down.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐒𝐩𝐢𝐫𝐢𝐭 𝐓𝐚𝐥𝐤𝐞𝐫.apk" download="𝐒𝐩𝐢𝐫𝐢𝐭 𝐓𝐚𝐥𝐤𝐞𝐫 𝐏𝐫𝐨">
+        <img src="images/𝐒𝐩𝐢𝐫𝐢𝐭 𝐓𝐚𝐥𝐤𝐞𝐫.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐒𝐩𝐢𝐫𝐢𝐭 𝐓𝐚𝐥𝐤𝐞𝐫 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐕𝐢𝐢𝐝𝐮𝐫𝐞 - 𝐯𝐯𝟐.𝟏𝟏.𝟏.𝟐𝟓𝟏𝟏𝟎𝟕.apk" download="𝐕𝐢𝐢𝐝𝐮𝐫𝐞 𝐏𝐫𝐨">
+        <img src="images/VIIDURE.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐕𝐢𝐢𝐝𝐮𝐫𝐞 𝐏𝐫𝐨</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐈𝐦𝐦𝐚𝐭 𝐒𝐜𝐚𝐧𝐧𝐞𝐫 𝐕𝟐.𝟑.𝟎.apk" download="𝐈𝐦𝐦𝐚𝐭 𝐒𝐜𝐚𝐧𝐧𝐞𝐫">
+        <img src="images/immat.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐈𝐦𝐦𝐚𝐭 𝐒𝐜𝐚𝐧𝐧𝐞𝐫</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+	
+	<a class="link" href="downloads/𝐖𝐢-𝐅𝐢 𝐀𝐑 - 𝐯𝟓.𝟏𝟕.apk" download="𝐖𝐢-𝐅𝐢 𝐀𝐑">
+        <img src="images/wifi ar.png" class="btn-icon">
+        <div class="btn-text-container">
+            <span class="btn-title">𝐖𝐢-𝐅𝐢 𝐀𝐑</span>
+            <span class="subtitle">⚡ Télécharger ⚡</span>
+        </div>
+    </a>
+
+</body>
+</html>
